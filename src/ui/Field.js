@@ -13,11 +13,11 @@ function Field({ label, type, initialValue, options, placeholder, rounded }) {
     <Section title={label} rounded={rounded}>
       {type === 'select' && options ? (
         <select
-          defaultValue={initialValue}
+          defaultValue={initialValue || 'none'}
           className="px-4 py-3 bg-white w-full border-2 border-solid border-transparent outline-none"
         >
           <option hidden disabled value="none">
-            Select one...
+            {placeholder ? placeholder : 'Select one...'}
           </option>
           {options.map(({ label, value }, key) => (
             <option value={value} key={`field-option-${key}`}>
@@ -48,7 +48,6 @@ Field.propTypes = {
 }
 Field.defaultProps = {
   type: 'text',
-  initialValue: 'none',
 }
 
 export default Field
