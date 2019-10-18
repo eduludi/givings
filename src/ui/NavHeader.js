@@ -9,6 +9,11 @@ import Icon from './Icon'
 function NavHeader({ className, title, backTo, showBack }) {
   const history = useHistory()
 
+  const time = new Date().toLocaleString('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit',
+  })
+
   return (
     <header
       className={`bg-blue-600 flex flex-col text-white h-20 flex-shrink-0 ${className}`}
@@ -16,10 +21,10 @@ function NavHeader({ className, title, backTo, showBack }) {
       <div className="flex justify-between items-center text-xs py-1 px-2">
         <div className="w-1/3">
           <Icon name="signal" />
-          <span className="px-1">Carrier</span>
+          <span className="px-1">HopeMedia</span>
           <Icon name="wifi" />
         </div>
-        <span className="w-1/3 flex justify-center">10:26</span>
+        <span className="w-1/3 flex justify-center">{time}</span>
         <span className="w-1/3 flex justify-end items-center">
           <span className="pr-1">100%</span>
           <Icon name="battery-full" />
