@@ -9,7 +9,7 @@ function Welcome({ ...props }) {
   return (
     <IntroScreen>
       <Wrapper vertical className="items-center px-6 pb-10 p-0">
-        <Image src="/applogo/white.png" />
+        <Image name="applogo/white" />
         <p className="text-white">
           The donations app for your church projects.
         </p>
