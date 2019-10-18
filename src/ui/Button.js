@@ -13,8 +13,8 @@ const typeClasses = {
 
 const sizeClasses = {
   small: 'text-sm px-2 py-1',
-  default: 'px-3 py-2',
-  large: 'text-lg px-6 py-4',
+  default: 'px-3 py-3',
+  large: 'text-lg px-5 py-4',
 }
 
 function Button({ className, icon, label, onClick, size, type, to }) {
@@ -25,7 +25,7 @@ function Button({ className, icon, label, onClick, size, type, to }) {
       onClick={onClick}
     >
       {icon && (
-        <span className="mr-1 outline-none">
+        <span className="mr-2 outline-none">
           <Icon name={icon} />
         </span>
       )}
