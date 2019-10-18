@@ -9,7 +9,7 @@ function ConditionalLink({ children, condition, to, ...rest }) {
       {children}
     </Link>
   ) : (
-    <button {...rest}>{children}</button>
+    <div {...rest}>{children}</div>
   )
 }
 
