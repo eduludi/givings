@@ -8,7 +8,7 @@ function Image({ className, name, alt, extension }) {
     <div className={className}>
       <img
         src={`${path}.${extension}`}
-        srcSet={`${path}@2x.${extension} 2x`}
+        srcSet={`${path}@2x.${extension} 2x, ${path}@3x.${extension} 3x`}
         alt={alt}
       />
     </div>
