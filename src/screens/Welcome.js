@@ -4,6 +4,7 @@ import Button from '../ui/Button'
 import Image from '../ui/Image'
 import IntroScreen from '../ui/IntroScreen'
 import Wrapper from '../ui/Wrapper'
+import Link from '../utils/Link'
 
 function Welcome({ ...props }) {
   return (
@@ -30,6 +31,18 @@ function Welcome({ ...props }) {
           to="/signup"
           className="mt-4"
         />
+      </Wrapper>
+
+      <Wrapper vertical className="items-center px-6 pt-10">
+        <p className="text-white text-center text-sm leading-tight">
+          <Link to="/about">
+            <span className="block">
+              &copy; 2019 Inter-European Division of the General Conference of
+              the Seventh-day Adventist Church
+            </span>
+            <span className="block text-blue-200">Read more</span>
+          </Link>
+        </p>
       </Wrapper>
     </IntroScreen>
   )

@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 
 import Welcome from './screens/Welcome'
+import About from './screens/About'
 import Login from './screens/Login'
 import SignUp from './screens/SignUp'
 import ForgotPassword from './screens/ForgotPassword'
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Redirect from="/" to="/welcome" />
         </Switch>
