@@ -17,7 +17,7 @@ function Donate({ ...props }) {
       />
 
       <Section title="Last donations" more="See list" to="/donations">
-        <Item label="Tihte" value="221.67 €" to="/donations/details" />
+        <Item label="Thite" value="221.67 €" to="/donations/details" />
         <Item label="Offerings" value="50.00 €" to="/donations/details" />
         <Item label="Offerings" value="30.00 €" to="/donations/details" />
       </Section>

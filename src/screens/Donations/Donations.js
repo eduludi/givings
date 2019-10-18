@@ -13,7 +13,7 @@ function rand(number) {
 
 const projects = [
   'Internet',
-  'Tihte',
+  'Thite',
   'Offerings',
   'ADRA',
   'Youth Ministery',
