@@ -6,11 +6,13 @@ import { useHistory } from 'react-router-dom'
 import Button from './Button'
 import Icon from './Icon'
 
-function NavHeader({ title, backTo, showBack }) {
+function NavHeader({ className, title, backTo, showBack }) {
   const history = useHistory()
 
   return (
-    <header className="bg-blue-600 flex flex-col text-white h-20 flex-shrink-0 fixed top-0 right-0 left-0">
+    <header
+      className={`bg-blue-600 flex flex-col text-white h-20 flex-shrink-0 ${className}`}
+    >
       <div className="flex justify-between items-center text-xs py-1 px-2">
         <div className="w-1/3">
           <Icon name="signal" />
@@ -45,11 +47,13 @@ function NavHeader({ title, backTo, showBack }) {
 }
 
 NavHeader.propTypes = {
-  title: PropTypes.string,
   backTo: PropTypes.string,
+  className: PropTypes.bool,
   showBack: PropTypes.bool,
+  title: PropTypes.string,
 }
 NavHeader.defaultProps = {
+  className: '',
   showBack: true,
 }
 
