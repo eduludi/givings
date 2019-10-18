@@ -48,7 +48,7 @@ function NavHeader({ className, title, backTo, showBack }) {
 
 NavHeader.propTypes = {
   backTo: PropTypes.string,
-  className: PropTypes.bool,
+  className: PropTypes.string,
   showBack: PropTypes.bool,
   title: PropTypes.string,
 }
