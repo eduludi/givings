@@ -10,7 +10,7 @@ function NavHeader({ title, backTo, showBack }) {
   const history = useHistory()
 
   return (
-    <header className="bg-blue-600 flex flex-col text-white h-20 flex-shrink-0">
+    <header className="bg-blue-600 flex flex-col text-white h-20 flex-shrink-0 fixed top-0 right-0 left-0">
       <div className="flex justify-between items-center text-xs py-1 px-2">
         <div className="w-1/3">
           <Icon name="signal" />
