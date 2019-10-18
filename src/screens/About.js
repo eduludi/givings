@@ -7,7 +7,7 @@ import Wrapper from '../ui/Wrapper'
 
 function About({ ...props }) {
   return (
-    <Screen title="About">
+    <Screen title="About" hideFooter>
       <Wrapper vertical className="items-center px-6 pb-10 p-0">
         <Image name="applogo/blue" />
         <p className="text-gray-600">

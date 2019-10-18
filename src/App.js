@@ -9,6 +9,7 @@ import {
 
 import Welcome from './screens/Welcome'
 import About from './screens/About'
+import ScanQR from './screens/ScanQR'
 import Login from './screens/Login'
 import SignUp from './screens/SignUp'
 import ForgotPassword from './screens/ForgotPassword'
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/signup">
             <SignUp />
+          </Route>
+          <Route path="/scan-qr">
+            <ScanQR />
           </Route>
           <Route path="/forgotPassword">
             <ForgotPassword />

@@ -25,10 +25,10 @@ function Welcome({ ...props }) {
           className="mt-4"
         />
         <Button
-          label="Sign up"
-          icon="edit"
+          label="Scan CODE"
+          icon="qrcode"
           type="hollow"
-          to="/signup"
+          to="/scan-qr"
           className="mt-4"
         />
       </Wrapper>
