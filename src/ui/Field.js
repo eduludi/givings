@@ -3,10 +3,22 @@ import PropTypes from 'prop-types'
 
 import Section from './Section'
 
-function Field({ label, type, initialValue, options, placeholder, rounded }) {
+function Field({
+  initialValue,
+  label,
+  onChange,
+  options,
+  placeholder,
+  rounded,
+  type,
+}) {
   const [value, setValue] = useState(initialValue)
   function _onChange({ target }) {
     setValue(target.value)
+
+    if (onChange) {
+      onChange(target.value)
+    }
   }
 
   return (
@@ -14,7 +26,9 @@ function Field({ label, type, initialValue, options, placeholder, rounded }) {
       {type === 'select' && options ? (
         <select
           defaultValue={initialValue || 'none'}
+          value={value}
           className="px-4 py-3 bg-white w-full border-2 border-solid border-transparent outline-none"
+          onChange={_onChange}
         >
           <option hidden disabled value="none">
             {placeholder ? placeholder : 'Select one...'}
@@ -45,6 +59,7 @@ Field.propTypes = {
   placeholder: PropTypes.string,
   initialValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   rounded: PropTypes.bool,
+  onChange: PropTypes.func,
 }
 Field.defaultProps = {
   type: 'text',
