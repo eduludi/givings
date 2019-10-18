@@ -16,6 +16,9 @@ function Field({ label, type, initialValue, options, placeholder, rounded }) {
           defaultValue={initialValue}
           className="px-4 py-3 bg-white w-full border-2 border-solid border-transparent outline-none"
         >
+          <option hidden disabled value="none">
+            Select one...
+          </option>
           {options.map(({ label, value }, key) => (
             <option value={value} key={`field-option-${key}`}>
               {label}
@@ -40,10 +43,12 @@ Field.propTypes = {
   options: PropTypes.array,
   type: PropTypes.oneOf(['text', 'email', 'phone', 'number', 'select']),
   placeholder: PropTypes.string,
+  initialValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   rounded: PropTypes.bool,
 }
 Field.defaultProps = {
   type: 'text',
+  initialValue: 'none',
 }
 
 export default Field
