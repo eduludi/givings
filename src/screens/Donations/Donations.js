@@ -31,7 +31,7 @@ const donations = range(0, 100).map(i => ({
 
 function Donate({ ...props }) {
   return (
-    <Screen>
+    <Screen title="My Donations">
       <Header title="Your Donations" />
 
       <Section title="Last donations">

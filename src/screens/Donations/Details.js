@@ -7,7 +7,7 @@ import Screen from '../../ui/Screen'
 
 function DonnationDetails({ ...props }) {
   return (
-    <Screen>
+    <Screen title="Donation details">
       <Header title="Donation #34569" subtitle="on 10.10.2019" />
 
       <Section>

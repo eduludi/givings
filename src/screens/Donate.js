@@ -9,7 +9,7 @@ import Wrapper from '../ui/Wrapper'
 
 function Donate({ ...props }) {
   return (
-    <Screen>
+    <Screen title="Donate">
       <Header
         title="Darmstadt International"
         subtitle="Freikirche der Siebenten-Tags-Adventisten, Süddeutscher Verband KdöR"
