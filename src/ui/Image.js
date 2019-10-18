@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function Image({ className, name, alt, extension }) {
-  const path = `images/${name}`
+  const path = `/images/${name}`
 
   return (
     <div className={className}>
