@@ -16,13 +16,13 @@ function Welcome({ ...props }) {
         </p>
       </Wrapper>
       <Wrapper vertical>
-        <Button label="Donate" icon="donate" to="/donate" size="large" />
+        <Button label="Donate" icon="donate" to="/donate" />
         <Button
           label="Login"
           icon="lock"
           type="hollow"
           to="/login"
-          className="mt-8"
+          className="mt-4"
         />
         <Button
           label="Sign up"
