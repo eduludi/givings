@@ -14,6 +14,7 @@ import ForgotPassword from './screens/ForgotPassword'
 import Donate from './screens/Donate'
 import DonationsRouter from './screens/Donations/Router'
 import Profile from './screens/Profile'
+import PickChurch from './screens/PickChurch'
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/signup">
             <SignUp />
+          </Route>
+          <Route path="/pick-church">
+            <PickChurch />
           </Route>
           <Route path="/forgotPassword">
             <ForgotPassword />
