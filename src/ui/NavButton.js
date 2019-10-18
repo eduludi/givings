@@ -18,9 +18,9 @@ function NavButton({ label, icon, url }) {
           active ? 'bg-blue-600 text-white' : 'text-gray-600'
         }`}
       >
-        <div className="mb-1">
+        <span>
           <Icon name={icon} size="lg" mode={active ? 'solid' : 'light'} />
-        </div>
+        </span>
         <small className="text-xs">{label}</small>
       </button>
     </ConditionalLink>
