@@ -14,6 +14,7 @@ import Login from './screens/Login'
 import SignUp from './screens/SignUp'
 import ForgotPassword from './screens/ForgotPassword'
 import Donate from './screens/Donate'
+import ProjectsRouter from './screens/Projects/Router'
 import DonationsRouter from './screens/Donations/Router'
 import Profile from './screens/Profile'
 
@@ -36,6 +37,10 @@ function App() {
           </Route>
           <Route path="/forgotPassword">
             <ForgotPassword />
+          </Route>
+
+          <Route path="/projects">
+            <ProjectsRouter />
           </Route>
           <Route path="/donate">
             <Donate />
