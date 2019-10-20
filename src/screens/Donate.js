@@ -30,19 +30,19 @@ function Donate() {
         <Item label="Offerings" value="50.00 €" to="/donations/details" />
       </Section>
 
+      <Section title="Conference projects" more="See list" to="/donations">
+        <Item label="Online church" value="120.00 €" to="/donations/details" />
+        <Item label="Project X" value="150.00 €" to="/donations/details" />
+      </Section>
+
       <Wrapper vertical>
         <Button
-          label="Finish donation"
+          label="Confirm donation"
           icon="credit-card"
           type="primary"
           to="/donation/finish"
         />
       </Wrapper>
-
-      <Section title="Conference projects" more="See list" to="/donations">
-        <Item label="Online church" value="120.00 €" to="/donations/details" />
-        <Item label="Project X" value="150.00 €" to="/donations/details" />
-      </Section>
     </Screen>
   )
 }
