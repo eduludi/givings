@@ -17,7 +17,7 @@ function Screen({
     <div
       className={`bg-gray-200 flex flex-col justify-between h-screen ${
         fixedHeader ? 'mt-12' : ''
-      } ${hideFooter ? '' : 'pb-16'}`}
+      } ${hideFooter ? '' : 'pb-24'}`}
     >
       <NavHeader
         title={title}
