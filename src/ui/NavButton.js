@@ -14,7 +14,7 @@ function NavButton({ label, icon, url }) {
   return (
     <ConditionalLink to={url}>
       <button
-        className={`flex flex-col justify-center items-center px-4 py-2 focus:outline-none ${
+        className={`flex flex-col justify-center items-center px-4 py-1 focus:outline-none ${
           active ? 'bg-blue-600 text-white' : 'text-gray-600'
         }`}
       >
