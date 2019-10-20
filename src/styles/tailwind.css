@@ -7231,6 +7231,10 @@ video {
   z-index: auto;
 }
 
+body {
+  background-color: #3182ce;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

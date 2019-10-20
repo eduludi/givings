@@ -18,10 +18,13 @@ import ProjectsRouter from './screens/Projects/Router'
 import DonationsRouter from './screens/Donations/Router'
 import Profile from './screens/Profile'
 import PickChurch from './screens/PickChurch'
+import useBodyLock from './utils/useBodyLock'
 
 function App() {
+  useBodyLock()
+
   return (
-    <div className="container font-sans ">
+    <div className="container font-sans overflow-hidden">
       <Router>
         <Switch>
           <Route path="/welcome">
