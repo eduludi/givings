@@ -5,7 +5,7 @@ import Image from '../ui/Image'
 import Screen from '../ui/Screen'
 import Wrapper from '../ui/Wrapper'
 
-function About({ ...props }) {
+function About() {
   return (
     <Screen title="About" hideFooter>
       <Wrapper vertical className="items-center px-6 pb-10 p-0">

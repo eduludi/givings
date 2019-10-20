@@ -5,7 +5,7 @@ import Field from '../ui/Field'
 import IntroScreen from '../ui/IntroScreen'
 import Wrapper from '../ui/Wrapper'
 
-function ForgotPassword({ ...props }) {
+function ForgotPassword() {
   return (
     <IntroScreen>
       <Wrapper vertical className="items-center py-2">

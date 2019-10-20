@@ -6,7 +6,7 @@ import IntroScreen from '../ui/IntroScreen'
 import Wrapper from '../ui/Wrapper'
 import Link from '../utils/Link'
 
-function Welcome({ ...props }) {
+function Welcome() {
   return (
     <IntroScreen>
       <Wrapper vertical className="items-center px-6 pb-10 p-0">

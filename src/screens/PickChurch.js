@@ -166,7 +166,7 @@ const churches = [
   },
 ]
 
-function PickChurch({ ...props }) {
+function PickChurch() {
   function _onChurchChange(value) {
     //console.log(value)
   }
@@ -207,8 +207,5 @@ function PickChurch({ ...props }) {
     </IntroScreen>
   )
 }
-
-PickChurch.propTypes = {}
-PickChurch.defaultProps = {}
 
 export default PickChurch

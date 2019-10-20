@@ -29,7 +29,7 @@ const donations = range(0, 100).map(i => ({
   ammount: `${rand(250)}.${rand(99)}`,
 }))
 
-function Projects({ ...props }) {
+function Projects() {
   return (
     <Screen title="Projects">
       <Header title="Projects" />
@@ -48,8 +48,5 @@ function Projects({ ...props }) {
     </Screen>
   )
 }
-
-Projects.propTypes = {}
-Projects.defaultProps = {}
 
 export default Projects

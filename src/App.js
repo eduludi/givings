@@ -19,7 +19,7 @@ function App() {
   useBodyLock()
 
   return (
-    <div className="font-sans overflow-hidden">
+    <div className="font-sans">
       <Router>
         <Switch>
           <Route path="/" exact>

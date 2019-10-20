@@ -5,7 +5,7 @@ import Field from '../ui/Field'
 import IntroScreen from '../ui/IntroScreen'
 import Wrapper from '../ui/Wrapper'
 
-function Signup({ ...props }) {
+function Signup() {
   return (
     <IntroScreen>
       <Wrapper vertical className="items-center py-2">

@@ -39,7 +39,7 @@ const countries = [
   },
 ]
 
-function Profile({ ...props }) {
+function Profile() {
   return (
     <Screen title="My profile">
       <Header
@@ -62,8 +62,5 @@ function Profile({ ...props }) {
     </Screen>
   )
 }
-
-Profile.propTypes = {}
-Profile.defaultProps = {}
 
 export default Profile
