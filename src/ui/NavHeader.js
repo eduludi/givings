@@ -13,22 +13,20 @@ function NavHeader({ className, title, backTo, showBack }) {
     <header
       className={`bg-blue-600 flex flex-col text-white flex-shrink-0 ${className}`}
     >
-      <div className="flex justify-between items-center  h-12">
-        <div className="w-1/5">
+      <div className="flex justify-between items-center h-12">
+        <div className="w-1/6 flex justify-start p-3">
           {showBack && (
             <Button
               icon="arrow-left"
-              onClick={
-                backTo ? null : () => console.log('!!') || history.goBack()
-              }
+              onClick={backTo ? null : history.goBack}
               type="link"
               size="small"
               to={backTo}
             />
           )}
         </div>
-        <h1 className="w-3/5 text-lg text-center tracking-wide">{title}</h1>
-        <div className="w-1/5"></div>
+        <h1 className="w-4/6 text-lg text-center tracking-wide p-3">{title}</h1>
+        <div className="w-1/6 flex justify-end p-3"></div>
       </div>
     </header>
   )
