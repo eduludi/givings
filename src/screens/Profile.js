@@ -41,7 +41,7 @@ const countries = [
 
 function Profile({ ...props }) {
   return (
-    <Screen>
+    <Screen title="My profile">
       <Header
         title="Sascha Schuster"
         subtitle="sascha.schuster@stimme-der-hoffnung.de"
