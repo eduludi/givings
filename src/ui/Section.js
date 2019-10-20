@@ -5,7 +5,7 @@ import { ConditionalLink } from '../utils/Link'
 
 function Section({ title, more, children, rounded, to }) {
   return (
-    <div className="my-2">
+    <div className="mt-4 mb-6">
       <div className="flex justify-between px-4 py-2 text-xs">
         {title && <h3 className="text-gray-600 uppercase">{title}</h3>}
         {more && to && (
