@@ -12,7 +12,10 @@ function Field({
   rounded,
   type,
 }) {
-  const [value, setValue] = useState(initialValue)
+  const [value, setValue] = useState(
+    initialValue || (type === 'select' ? 'none' : null)
+  )
+
   function _onChange({ target }) {
     setValue(target.value)
 
@@ -25,7 +28,6 @@ function Field({
     <Section title={label} rounded={rounded}>
       {type === 'select' && options ? (
         <select
-          defaultValue={initialValue || 'none'}
           value={value}
           className="px-4 py-3 bg-white w-full border-2 border-solid border-transparent outline-none"
           onChange={_onChange}
