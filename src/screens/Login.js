@@ -17,7 +17,7 @@ function Login() {
         <Field placeholder="Password" rounded />
       </Wrapper>
       <Wrapper vertical className="px-8">
-        <Button label="Login" icon="sign-in" to="/projects" />
+        <Button label="Login" icon="sign-in" to="/donate" />
         <p className="text-white text-center p-4">
           or, if you don’t have an account
         </p>
