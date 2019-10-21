@@ -10,7 +10,7 @@ function Signup() {
     <IntroScreen>
       <Wrapper vertical className="items-center py-2">
         <h1 className="text-white text-5xl">Sign-up</h1>
-        <p className="text-white">Welcome back!</p>
+        <p className="text-white">It's good to have you here!</p>
       </Wrapper>
       <Wrapper vertical className="px-8">
         <Field placeholder="Name" rounded />
@@ -18,7 +18,7 @@ function Signup() {
         <Field placeholder="Password" rounded />
       </Wrapper>
       <Wrapper vertical className="px-8">
-        <Button label="Sign-up" icon="edit" to="/login" type="hollow" />
+        <Button label="Sign-up" icon="edit" to="/pick-church" type="hollow" />
       </Wrapper>
     </IntroScreen>
   )
