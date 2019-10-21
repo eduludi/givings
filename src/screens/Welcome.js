@@ -11,12 +11,12 @@ function Welcome() {
     <IntroScreen>
       <Wrapper vertical className="items-center px-6 pb-10 p-0">
         <Image name="applogo/white" />
-        <p className="text-white">
+        <p className="text-white px-12 pt-4 text-center">
           The donations app for your church projects.
         </p>
       </Wrapper>
       <Wrapper vertical>
-        <Button label="Donate" icon="donate" to="/donate" />
+        <Button label="Donate" icon="donate" to="/pick-church" />
         <Button
           label="Login"
           icon="lock"
