@@ -11,8 +11,8 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-    "build:style:purge": "purgecss -c purgecss.config.js -o src/styles",
+    "build:style": "tailwind build src/styles/index.css -o public/styles/index.css",
+    "build:style:purge": "purgecss -c purgecss.config.js -o public/styles",
     "build:style:prod": "npm run build:style && npm run build:style:purge",
     "start": "npm run build:style && react-scripts start",
     "build": "npm run build:style:prod && react-scripts build",
