@@ -6,6 +6,7 @@ import Icon from './Icon'
 
 const typeClasses = {
   default: 'bg-white text-blue-600 border-none',
+  disabled: 'bg-gray-500 text-gray-300',
   primary: 'bg-blue-600 text-white border-blue-600',
   hollow: 'transparent text-white border-white',
   link: 'transparent text-white border-none',
@@ -23,9 +24,7 @@ function Button({ className, disabled, icon, label, onClick, size, type, to }) {
       to={to}
       className={`rounded-full text-center uppercase border border-solid outline-none m-1 ${
         sizeClasses[size]
-      } ${
-        disabled ? 'bg-gray-500 text-gray-300' : typeClasses[type]
-      } ${className}`}
+      } ${typeClasses[disabled ? 'disabled' : type]} ${className}`}
       onClick={onClick}
     >
       {icon && (
