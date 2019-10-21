@@ -7,9 +7,9 @@ import Image from '../../ui/Image'
 import Item from '../../ui/Item'
 import Wrapper from '../../ui/Wrapper'
 
-function Detail({ ...props }) {
+function Detail() {
   return (
-    <Screen title="Project Detail" {...props}>
+    <Screen title="Project Detail">
       <Header
         title="Online church"
         subtitle="Süddeutscher Verband"

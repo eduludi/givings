@@ -39,9 +39,9 @@ const countries = [
   },
 ]
 
-function Profile({ ...props }) {
+function Profile() {
   return (
-    <Screen>
+    <Screen title="My profile">
       <Header
         title="Sascha Schuster"
         subtitle="sascha.schuster@stimme-der-hoffnung.de"
@@ -62,8 +62,5 @@ function Profile({ ...props }) {
     </Screen>
   )
 }
-
-Profile.propTypes = {}
-Profile.defaultProps = {}
 
 export default Profile

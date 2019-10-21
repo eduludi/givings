@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Header from '../../ui/Header'
 import Section from '../../ui/Section'
 import Item from '../../ui/Item'
 import Screen from '../../ui/Screen'
@@ -29,11 +28,9 @@ const donations = range(0, 100).map(i => ({
   ammount: `${rand(250)}.${rand(99)}`,
 }))
 
-function Donate({ ...props }) {
+function Donations() {
   return (
     <Screen title="My Donations">
-      <Header title="Your Donations" />
-
       <Section title="Last donations">
         {donations.map(({ date, type, ammount }, key) => (
           <Item
@@ -49,7 +46,4 @@ function Donate({ ...props }) {
   )
 }
 
-Donate.propTypes = {}
-Donate.defaultProps = {}
-
-export default Donate
+export default Donations

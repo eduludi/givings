@@ -4,48 +4,29 @@ import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 
 import Button from './Button'
-import Icon from './Icon'
+// import StatusBar from './StatusBar'
 
 function NavHeader({ className, title, backTo, showBack }) {
   const history = useHistory()
 
-  const time = new Date().toLocaleString('en-GB', {
-    hour: '2-digit',
-    minute: '2-digit',
-  })
-
   return (
     <header
-      className={`bg-blue-600 flex flex-col text-white h-20 flex-shrink-0 ${className}`}
+      className={`bg-blue-600 flex flex-col text-white flex-shrink-0 ${className}`}
     >
-      <div className="flex justify-between items-center text-xs py-1 px-2">
-        <div className="w-1/3">
-          <Icon name="signal" />
-          <span className="px-1">HopeMedia</span>
-          <Icon name="wifi" />
-        </div>
-        <span className="w-1/3 flex justify-center">{time}</span>
-        <span className="w-1/3 flex justify-end items-center">
-          <span className="pr-1">100%</span>
-          <Icon name="battery-full" />
-        </span>
-      </div>
-      <div className="flex justify-between items-center p-2">
-        <div className="w-1/5">
+      <div className="flex justify-between items-center h-12">
+        <div className="w-1/6 flex justify-start p-3">
           {showBack && (
             <Button
               icon="arrow-left"
-              onClick={
-                backTo ? null : () => console.log('!!') || history.goBack()
-              }
+              onClick={backTo ? null : history.goBack}
               type="link"
               size="small"
               to={backTo}
             />
           )}
         </div>
-        <h1 className="w-3/5 text-lg text-center tracking-wide">{title}</h1>
-        <div className="w-1/5"></div>
+        <h1 className="w-4/6 text-lg text-center tracking-wide p-3">{title}</h1>
+        <div className="w-1/6 flex justify-end p-3"></div>
       </div>
     </header>
   )

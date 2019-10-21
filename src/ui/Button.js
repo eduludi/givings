@@ -17,11 +17,15 @@ const sizeClasses = {
   large: 'text-lg px-5 py-4',
 }
 
-function Button({ className, icon, label, onClick, size, type, to }) {
+function Button({ className, disabled, icon, label, onClick, size, type, to }) {
   return (
     <ConditionalLink
       to={to}
-      className={`rounded-full text-center uppercase border border-solid outline-none mx-1 my-1 ${typeClasses[type]} ${sizeClasses[size]} ${className}`}
+      className={`rounded-full text-center uppercase border border-solid outline-none m-1 ${
+        sizeClasses[size]
+      } ${
+        disabled ? 'bg-gray-500 text-gray-300' : typeClasses[type]
+      } ${className}`}
       onClick={onClick}
     >
       {icon && (
@@ -36,6 +40,7 @@ function Button({ className, icon, label, onClick, size, type, to }) {
 
 Button.propTypes = {
   className: PropTypes.string,
+  disabled: PropTypes.bool,
   icon: PropTypes.string,
   label: PropTypes.string,
   size: PropTypes.oneOf(['small', 'default', 'large']),

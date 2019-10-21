@@ -16,8 +16,8 @@ function Screen({
   return (
     <div
       className={`bg-gray-200 flex flex-col justify-between h-screen ${
-        fixedHeader ? 'mt-20' : ''
-      } ${hideFooter ? '' : 'pb-16'}`}
+        fixedHeader ? 'mt-12' : ''
+      } ${hideFooter ? '' : 'pb-24'}`}
     >
       <NavHeader
         title={title}
@@ -25,7 +25,10 @@ function Screen({
         showBack={showBack}
         className={fixedHeader ? 'fixed top-0 right-0 left-0' : ''}
       />
-      <div className="flex flex-col flex-grow justify-start overflow-y-auto">
+      <div
+        className="flex flex-col flex-grow justify-start overflow-y-auto"
+        body-scroll-lock-ignore="true"
+      >
         {children}
       </div>
       {!hideFooter && (

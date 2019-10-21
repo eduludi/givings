@@ -5,7 +5,7 @@ import Section from '../../ui/Section'
 import Item from '../../ui/Item'
 import Screen from '../../ui/Screen'
 
-function DonnationDetails({ ...props }) {
+function DonnationDetails() {
   return (
     <Screen title="Donation details">
       <Header title="Donation #34569" subtitle="on 10.10.2019" />
@@ -27,8 +27,5 @@ function DonnationDetails({ ...props }) {
     </Screen>
   )
 }
-
-DonnationDetails.propTypes = {}
-DonnationDetails.defaultProps = {}
 
 export default DonnationDetails
