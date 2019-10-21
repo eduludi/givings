@@ -46,7 +46,7 @@ function Field({
           type={type}
           value={value}
           onChange={_onChange}
-          className="px-4 py-2 w-full border-2 border-solid border-transparent focus:border-blue-500 outline-none"
+          className="px-4 py-2 w-full border-b-2 border-solid border-transparent focus:border-blue-500 outline-none"
           placeholder={placeholder}
         />
       )}
