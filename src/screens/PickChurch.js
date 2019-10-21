@@ -174,8 +174,10 @@ function PickChurch() {
   return (
     <IntroScreen>
       <Wrapper vertical className="items-center py-2">
-        <h1 className="text-white text-center text-4xl">Pick your church</h1>
-        <p className="text-white">To show you relevant projects.</p>
+        <h1 className="text-white text-center text-4xl pb-4">
+          Pick your church
+        </h1>
+        <p className="text-white">to show you relevant projects.</p>
       </Wrapper>
       <Wrapper vertical className="px-8">
         <Field
@@ -197,12 +199,7 @@ function PickChurch() {
           options={churches}
           rounded
         />
-        <Button
-          label="Save"
-          icon="save"
-          to="/church-projects"
-          className="mt-4"
-        />
+        <Button label="Save" icon="save" to="/donate" className="mt-4" />
       </Wrapper>
     </IntroScreen>
   )
