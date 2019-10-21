@@ -9,9 +9,9 @@ import Screen from '../ui/Screen'
 import Wrapper from '../ui/Wrapper'
 
 const stats = [
-  { label: 'Local', count: 16, url: '#local', highlighted: true },
-  { label: 'Conference', url: '#conference', count: 12 },
-  { label: 'Union', url: '#union', count: 6 },
+  { label: 'Local', count: 21, url: '/projects' },
+  { label: 'Conference', url: '/projects/conference', count: 12 },
+  { label: 'Union', url: '/projects/union', count: 6 },
 ]
 
 function Donate() {
@@ -19,20 +19,35 @@ function Donate() {
     <Screen title="Donate">
       <Header
         title="Darmstadt International"
-        subtitle="Freikirche der Siebenten-Tags-Adventisten, Süddeutscher Verband KdöR"
-        description="Duis sit amet scelerisque turpis. Fusce in ultricies velit. Praesent blandit pellentesque nisl, eu porttitor."
+        subtitle="South German Union Conference, Central Rhenish Conference"
+        description="Here you can see featured local, conference and union projects. You also can see the complete lists."
       />
 
       <Stats items={stats} />
 
-      <Section title="Local projects" more="See list" to="/donations">
-        <Item label="Thite" value="221.67 €" to="/donations/details" />
-        <Item label="Offerings" value="50.00 €" to="/donations/details" />
+      <Section title="Local projects" more="See complete list" to="/projects">
+        <Item label="Thite" value="221.67 €" to="/projects/detail" />
+        <Item label="Offerings" value="50.00 €" to="/projects/detail" />
       </Section>
 
-      <Section title="Conference projects" more="See list" to="/donations">
-        <Item label="Online church" value="120.00 €" to="/donations/details" />
-        <Item label="Project X" value="150.00 €" to="/donations/details" />
+      <Section
+        title="Conference projects"
+        more="See complete list"
+        to="/projects/conference"
+      >
+        <Item label="Online church" value="120.00 €" to="/projects/detail" />
+      </Section>
+
+      <Section
+        title="Union projects"
+        more="See complete list"
+        to="/projects/union"
+      >
+        <Item label="His Hands" value="70.00 €" to="/projects/detail" />
+      </Section>
+
+      <Section>
+        <Item label="TOTAL" value="461.67 €" />
       </Section>
 
       <Wrapper vertical>
@@ -40,7 +55,7 @@ function Donate() {
           label="Confirm donation"
           icon="credit-card"
           type="primary"
-          to="/donation/finish"
+          to="/credit-card"
         />
       </Wrapper>
     </Screen>
