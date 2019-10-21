@@ -12,7 +12,7 @@ function Detail() {
     <Screen title="Project Detail">
       <Header
         title="Online church"
-        subtitle="Süddeutscher Verband"
+        subtitle="South German Union Conference"
         description="Duis sit amet scelerisque turpis. Fusce in ultricies velit. Praesent blandit pellentesque nisl, eu porttitor lorem efficitur nec."
       />
       <Image name="project-image-1" />
