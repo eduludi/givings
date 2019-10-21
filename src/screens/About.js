@@ -18,9 +18,9 @@ function About() {
         title="Inter-European Division of the General Conference of the Seventh-day Adventist Church "
         subtitle={
           <span>
-            Schosshaldenstrasse 17 3006,
+            Schosshaldenstrasse 17,
             <br />
-            Bern, Switzerland
+            3006 Bern, Switzerland
           </span>
         }
         description={
