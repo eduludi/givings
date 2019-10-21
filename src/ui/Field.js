@@ -13,7 +13,7 @@ function Field({
   type,
 }) {
   const [value, setValue] = useState(
-    initialValue || (type === 'select' ? 'none' : null)
+    initialValue || (type === 'select' ? 'none' : undefined)
   )
 
   function _onChange({ target }) {
