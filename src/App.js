@@ -6,6 +6,7 @@ import Welcome from './screens/Welcome'
 import About from './screens/About'
 import ScanQR from './screens/ScanQR'
 import Login from './screens/Login'
+import AnonymousDonation from './screens/AnonymousDonation'
 import SignUp from './screens/SignUp'
 import ForgotPassword from './screens/ForgotPassword'
 import Donate from './screens/Donate'
@@ -38,10 +39,12 @@ function App() {
           <Route path="/scan-qr">
             <ScanQR />
           </Route>
-          <Route path="/forgotPassword">
+          <Route path="/forgot-password">
             <ForgotPassword />
           </Route>
-
+          <Route path="/anonymous-donation">
+            <AnonymousDonation />
+          </Route>
           <Route path="/projects">
             <ProjectsRouter />
           </Route>
