@@ -26,7 +26,7 @@ function Login() {
         <Button
           label="Forgot your password?"
           icon="key"
-          to="/forgotPassword"
+          to="/forgot-password"
           type="link"
           className="mt-4"
         />

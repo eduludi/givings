@@ -16,19 +16,12 @@ function Welcome() {
         </p>
       </Wrapper>
       <Wrapper vertical>
-        <Button label="Donate" icon="donate" to="/pick-church" />
+        <Button label="Donate" icon="donate" to="/anonymous-donation" />
         <Button
           label="Login"
           icon="lock"
           type="hollow"
           to="/login"
-          className="mt-4"
-        />
-        <Button
-          label="Scan CODE"
-          icon="qrcode"
-          type="hollow"
-          to="/scan-qr"
           className="mt-4"
         />
       </Wrapper>
