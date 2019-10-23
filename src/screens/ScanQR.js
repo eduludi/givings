@@ -6,7 +6,7 @@ import Link from '../utils/Link'
 
 function ScanQR() {
   return (
-    <Screen title="ScanQR" hideFooter fixedHeader={false}>
+    <Screen title="Scan QR code" hideFooter fixedHeader={false}>
       <div
         className="flex flex-col flex-grow justify-center items-center bg-cover bg-center"
         style={{ backgroundImage: 'url(images/qr-code-camera.png)' }}
