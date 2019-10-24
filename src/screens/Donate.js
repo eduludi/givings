@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useLocation } from 'react-router-dom'
+
 import Button from '../ui/Button'
 import Header from '../ui/Header'
 import Section from '../ui/Section'
@@ -15,10 +17,12 @@ const stats = [
 ]
 
 function Donate() {
+  const location = useLocation()
+
   return (
     <Screen title="Donate">
       <Header
-        title="Darmstadt International"
+        title={location.state.church || 'Darmstadt International'}
         subtitle="South German Union Conference, Central Rhenish Conference"
         description="Here you can see featured local, conference and union projects. You also can see the complete lists."
       />

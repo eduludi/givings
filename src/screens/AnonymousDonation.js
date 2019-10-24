@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import IntroScreen from '../ui/IntroScreen'
 import Wrapper from '../ui/Wrapper'
@@ -85,6 +85,7 @@ const churches = [
 ]
 
 function AnonymousDonation() {
+  const history = useHistory()
   return (
     <IntroScreen>
       <Wrapper vertical className="items-center py-2">
@@ -93,7 +94,7 @@ function AnonymousDonation() {
       </Wrapper>
       <Wrapper vertical className="px-8">
         <Downshift
-          onChange={() => <Redirect to="/donate" />}
+          onChange={({ value }) => history.push('/donate', { church: value })}
           itemToString={item => (item ? item.value : '')}
         >
           {({
