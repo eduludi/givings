@@ -19,10 +19,17 @@ const stats = [
 function Donate() {
   const location = useLocation()
 
+  var title
+  if (typeof location.state !== 'undefined') {
+    title = location.state.church
+  } else {
+    title = 'Darmstadt International'
+  }
+
   return (
     <Screen title="Donate">
       <Header
-        title={location.state.church || 'Darmstadt International'}
+        title={title}
         subtitle="South German Union Conference, Central Rhenish Conference"
         description="Here you can see featured local, conference and union projects. You also can see the complete lists."
       />
