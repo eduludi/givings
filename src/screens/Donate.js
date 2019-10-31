@@ -37,7 +37,7 @@ function Donate() {
       <Stats items={stats} />
 
       <Section title="Local projects" more="See complete list" to="/projects">
-        <Item label="Thite" value="221.67 €" to="/projects/detail" />
+        <Item label="Tithe" value="221.67 €" to="/projects/detail" />
         <Item label="Offerings" value="50.00 €" to="/projects/detail" />
       </Section>
 
