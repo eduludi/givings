@@ -10,6 +10,7 @@ import AnonymousDonation from './screens/AnonymousDonation'
 import SignUp from './screens/SignUp'
 import ForgotPassword from './screens/ForgotPassword'
 import Donate from './screens/Donate'
+import DonateStart from './screens/DonateStart'
 import CreditCard from './screens/CreditCard'
 import ProjectsRouter from './screens/Projects/Router'
 import DonationsRouter from './screens/Donations/Router'
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path="/donate">
             <Donate />
+          </Route>
+          <Route path="/donate-start">
+            <DonateStart />
           </Route>
           <Route path="/credit-card">
             <CreditCard />

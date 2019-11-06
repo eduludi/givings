@@ -6,6 +6,7 @@ import Section from '../../ui/Section'
 import Image from '../../ui/Image'
 import Item from '../../ui/Item'
 import Wrapper from '../../ui/Wrapper'
+import Button from '../../ui/Button'
 
 function Detail() {
   return (
@@ -35,6 +36,9 @@ function Detail() {
           inventore accusamus ex et.
         </Wrapper>
       </Section>
+      <Wrapper vertical>
+        <Button label="Confirm" icon="donate" type="primary" to="/donate" />
+      </Wrapper>
     </Screen>
   )
 }

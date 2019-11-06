@@ -3,8 +3,52 @@ import { useHistory } from 'react-router-dom'
 
 import IntroScreen from '../ui/IntroScreen'
 import Wrapper from '../ui/Wrapper'
+import Field from '../ui/Field'
 import Button from '../ui/Button'
 import Downshift from 'downshift'
+
+const unions = [
+  {
+    label: 'Austrian Union of Churches Conference',
+    value: 'at',
+  },
+  {
+    label: 'Bulgarian Union of Churches Conference',
+    value: 'bg',
+  },
+  {
+    label: 'Czecho-Slovakian Union Conference',
+    value: 'cz',
+  },
+  {
+    label: 'Franco-Belgian Union Conference',
+    value: 'fr',
+  },
+  {
+    label: 'Italian Union of Churches Conference',
+    value: 'it',
+  },
+  {
+    label: 'North German Union Conference',
+    value: 'nd',
+  },
+  {
+    label: 'Portuguese Union of Churches Conference',
+    value: 'pt',
+  },
+  {
+    label: 'South German Union Conference',
+    value: 'sd',
+  },
+  {
+    label: 'Spanish Union of Churches Conference',
+    value: 'es',
+  },
+  {
+    label: 'Swiss Union Conference',
+    value: 'ch',
+  },
+]
 
 const churches = [
   {
@@ -93,8 +137,17 @@ function AnonymousDonation() {
         <p className="text-white text-center">anonymously</p>
       </Wrapper>
       <Wrapper vertical className="px-8">
+        <Field
+          placeholder="Pick your union"
+          type="select"
+          options={unions}
+          rounded
+        />
+
         <Downshift
-          onChange={({ value }) => history.push('/donate', { church: value })}
+          onChange={({ value }) =>
+            history.push('/donate-start', { church: value })
+          }
           itemToString={item => (item ? item.value : '')}
         >
           {({
