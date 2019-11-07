@@ -7,45 +7,53 @@ import Field from '../ui/Field'
 import Button from '../ui/Button'
 import Downshift from 'downshift'
 
-const unions = [
+const countries = [
   {
-    label: 'Austrian Union of Churches Conference',
+    label: 'Austria',
     value: 'at',
   },
   {
-    label: 'Bulgarian Union of Churches Conference',
+    label: 'Bulgaria',
     value: 'bg',
   },
   {
-    label: 'Czecho-Slovakian Union Conference',
+    label: 'Czechia-Slovakian',
     value: 'cz',
   },
   {
-    label: 'Franco-Belgian Union Conference',
+    label: 'Slovakia',
+    value: 'sk',
+  },
+  {
+    label: 'France',
     value: 'fr',
   },
   {
-    label: 'Italian Union of Churches Conference',
+    label: 'Belgium',
+    value: 'be',
+  },
+  {
+    label: 'Luxembourg',
+    value: 'lu',
+  },
+  {
+    label: 'Italia',
     value: 'it',
   },
   {
-    label: 'North German Union Conference',
-    value: 'nd',
+    label: 'Germany',
+    value: 'de',
   },
   {
-    label: 'Portuguese Union of Churches Conference',
+    label: 'Portugal',
     value: 'pt',
   },
   {
-    label: 'South German Union Conference',
-    value: 'sd',
-  },
-  {
-    label: 'Spanish Union of Churches Conference',
+    label: 'Spain',
     value: 'es',
   },
   {
-    label: 'Swiss Union Conference',
+    label: 'Switzerland',
     value: 'ch',
   },
 ]
@@ -138,9 +146,9 @@ function AnonymousDonation() {
       </Wrapper>
       <Wrapper vertical className="px-8">
         <Field
-          placeholder="Pick your union"
+          placeholder="Pick your country"
           type="select"
-          options={unions}
+          options={countries}
           rounded
         />
 
