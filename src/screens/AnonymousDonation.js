@@ -150,6 +150,7 @@ function AnonymousDonation() {
           type="select"
           options={countries}
           rounded
+          initialValue="de"
         />
 
         <Downshift
